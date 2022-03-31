@@ -93,10 +93,11 @@ void merge_sort(int *v, int e, int d)
 
 int partition(int *v, int p, int r)
 {
-    int x, i, j;
+    int x;
+    int i, j;
     x = v[r];
     i = p - 1;
-    for (j = 0; j < r; j++)
+    for (j = p; j < r; j++)
     {
         if (v[j] <= x)
         {
@@ -113,7 +114,7 @@ void quick_sort(int *v, int e, int d)
     if (e < d)
     {
         int q = partition(v, e, d);
+        quick_sort(v, e, q - 1);
+        quick_sort(v, q + 1, d);
     }
-    quick_sort(v, e, q - 1);
-    quick_sort(v, q + 1, d);
 }
