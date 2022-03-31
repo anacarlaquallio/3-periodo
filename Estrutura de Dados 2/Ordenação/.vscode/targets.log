@@ -7,7 +7,7 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # There is NO WARRANTY, to the extent permitted by law.
  
 
-# Make data base, printed on Thu Mar 31 14:22:50 2022
+# Make data base, printed on Thu Mar 31 14:32:00 2022
 
 # Variables
 
@@ -32,8 +32,7 @@ HOMEDRIVE = C:
 # automatic
 ^D = $(patsubst %/,%,$(patsubst %\,%,$(dir $^)))
 # makefile
-CUR 
-DIR := c:/Users/anaca/Documents/GitHub/Estudos/Estrutura de Dados 2/Ordena��o
+CURDIR := c:/Users/anaca/Documents/GitHub/Estudos/Estrutura de Dados 2/Ordena��o
 # default
 SHELL := sh.exe
 # environment
@@ -57,7 +56,7 @@ PROGRAMW6432 = C:\Program Files
 # environment
 PROGRAMDATA = C:\ProgramData
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-e405d423-6697-4692-ab80-ce21b8dd3f43-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-dd5e2c54-3c50-4c8d-8c6f-8153c32e32a2-sock
 # environment
 VSCODE_CWD = C:\Users\anaca\AppData\Local\Programs\Microsoft VS Code
 # environment
@@ -81,7 +80,7 @@ ELECTRON_RUN_AS_NODE = 1
 # automatic
 %F = $(notdir $%)
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_8280_LUIIEOOASMWKXUNQ
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_12920_VAZBJQHQMKSSJHZO
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
@@ -118,6 +117,7 @@ MAKELEVEL := 0
 MAKE = $(MAKE_COMMAND)
 # default
 MAKECMDGOALS := all
+ 
 # default
 MAKE_VERSION := 3.82.90
 # makefile
@@ -193,7 +193,7 @@ PROCESSOR_LEVEL = 23
 # environment
 FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
 # environment
-VSCODE_PID = 8280
+VSCODE_PID = 12920
 # environment
 USERDOMAIN_ROAMINGPROFILE = ANNYQUALLIO
 # variable set hash-table stats:
@@ -218,8 +218,7 @@ USERDOMAIN_ROAMINGPROFILE = ANNYQUALLIO
 # C:\Users\anaca\anaconda3 (key C:/Users/anaca/anaconda3, mtime 1637064976): 90 files, no impossibilities.
 # C:\Windows\System32\Wbem (key C:/Windows/System32/Wbem, mtime 1643723803): 155 files, no impossibilities.
 # C:\Users\anaca\anaconda3\Library\usr\bin: could not be stat'd.
-# C:\Users\anaca\AppData\Local\Programs\MiKTeX\miktex\bin\x64\ (key C:/Users/anaca/AppData/Local/Programs/MiKTeX/miktex/bin/x64/, mtime 16436319 
-35): 711 files, no impossibilities.
+# C:\Users\anaca\AppData\Local\Programs\MiKTeX\miktex\bin\x64\ (key C:/Users/anaca/AppData/Local/Programs/MiKTeX/miktex/bin/x64/, mtime 1643631935): 711 files, no impossibilities.
 # C:\Users\anaca\anaconda3\Library\bin (key C:/Users/anaca/anaconda3/Library/bin, mtime 1637064976): 431 files, no impossibilities.
 # C:\Windows\system32 (key C:/Windows/system32, mtime 1647010824): 2883 files, no impossibilities.
 # C:\Users\anaca\anaconda3\Scripts (key C:/Users/anaca/anaconda3/Scripts, mtime 1637064976): 324 files, no impossibilities.
@@ -297,6 +296,6 @@ Makefile:
 # strcache performance: lookups = 4889 / hit rate = 4%
 # hash-table stats:
 # Load=4688/8192=57%, Rehash=0, Collisions=2530/4889=52%
-# Finished Make data base on Thu Mar 31 14:22:50 2022
+# Finished Make data base on Thu Mar 31 14:32:00 2022
 
  
