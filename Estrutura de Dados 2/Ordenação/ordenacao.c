@@ -43,6 +43,7 @@ void bubble_sort(int *v, int n)
         }
     }
 }
+
 void insertion(int *v, int k)
 {
     int x = v[k];
@@ -64,27 +65,55 @@ void insertion_sort(int *v, int n)
     }
 }
 
-void merge (int *v, int p, int q, int r)
+void merge(int *v, int p, int q, int r)
 {
-    int ne = q-p+2;
-    int nd = r-q+1;
+    int ne = q - p + 2;
+    int nd = r - q + 1;
     int i, j, k;
-    int * e = malloc (sizeof(int)*ne);
-    int * d = malloc (sizeof(int)*nd);
+    int *e = malloc(sizeof(int) * ne);
+    int *d = malloc(sizeof(int) * nd);
 
-    for (i=0;i<ne-1;i++){
-        e[i]=v[p+1];
-        e[ne-1]= INT_MAX;
+    for (i = 0; i < ne - 1; i++)
+    {
+        e[i] = v[p + 1];
+        e[ne - 1] = INT_MAX;
     }
-
 }
+
 void merge_sort(int *v, int e, int d)
 {
-    if (e<d)
+    if (e < d)
     {
-        int m = (e+d)/2;
-        merge_sort(v,e, m);
-        merge_sort(v, m+1,d);
+        int m = (e + d) / 2;
+        merge_sort(v, e, m);
+        merge_sort(v, m + 1, d);
         merge(v, e, m, d);
     }
+}
+
+int partition(int *v, int p, int r)
+{
+    int x, i, j;
+    x = v[r];
+    i = p - 1;
+    for (j = 0; j < r; j++)
+    {
+        if (v[j] <= x)
+        {
+            i++;
+            troca(v, i, j);
+        }
+    }
+    troca(v, i + 1, r);
+    return i + 1;
+}
+
+void quick_sort(int *v, int e, int d)
+{
+    if (e < d)
+    {
+        int q = partition(v, e, d);
+    }
+    quick_sort(v, e, q - 1);
+    quick_sort(v, q + 1, d);
 }
