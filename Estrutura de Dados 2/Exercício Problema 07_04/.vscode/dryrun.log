@@ -1,0 +1,5 @@
+make.exe --dry-run --always-make --keep-going --print-directory
+make.exe: Entering directory 'c:/Users/anaca/Documents/GitHub/Estudos/Estrutura de Dados 2/Exerc�cio Problema 07_04'
+gcc -g *.c -o main
+make.exe: Leaving directory 'c:/Users/anaca/Documents/GitHub/Estudos/Estrutura de Dados 2/Exerc�cio Problema 07_04'
+ 
