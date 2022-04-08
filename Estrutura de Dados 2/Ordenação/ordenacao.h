@@ -10,3 +10,4 @@ void bubble_sort(int *v, int n);
 void insertion_sort(int *v, int n);
 void merge_sort(int *v, int e, int d);
 void quick_sort(int *v, int e, int d);
+void radix_sort (int *v, int n);

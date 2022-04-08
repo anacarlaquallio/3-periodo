@@ -5,8 +5,9 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
+ 
 
-# Make data base, printed on Thu Mar 31 14:56:08 2022
+# Make data base, printed on Fri Apr 08 15:05:06 2022
 
 # Variables
 
@@ -37,7 +38,7 @@ SHELL := sh.exe
 # environment
 WINDIR = C:\Windows
 # environment
-VSCODE_NLS_CONFIG = {"locale":"pt-br","availableLanguages":{"*":"pt-br"},"_languagePackId":"a513330bf1c350c1f1bb229e1d494e4b.pt-br","_translationsConfigFile":"C:\\Users\\anaca\\AppData\\Roaming\\Code\\clp\\a513330bf1c350c1f1bb229e1d494e4b.pt-br\\tcf.json","_cacheRoot":"C:\\Users\\anaca\\AppData\\Roaming\\Code\\clp\\a513330bf1c350c1f1bb229e1d494e4b.pt-br","_resolvedLanguagePackCoreLocation":"C:\\Users\\anaca\\AppData\\Roaming\\Code\\clp\\a513330bf1c350c1f1bb229e1d494e4b.pt-br\\e18005f0f1b33c29e81d732535d8c0e47cafb0b5","_corruptedFile":"C:\\Users\\anaca\\AppData\\Roaming\\Code\\clp\\a513330bf1c350c1f1bb229e1d494e4b.pt-br\\corrupted.info","_languagePackSupport":true}
+VSCODE_NLS_CONFIG = {"locale":"pt-br","availableLanguages":{"*":"pt-br"},"_languagePackId":"6fa53bab6734af57b5dd335f0fbb3ddd.pt-br","_translationsConfigFile":"C:\\Users\\anaca\\AppData\\Roaming\\Code\\clp\\6fa53bab6734af57b5dd335f0fbb3ddd.pt-br\\tcf.json","_cacheRoot":"C:\\Users\\anaca\\AppData\\Roaming\\Code\\clp\\6fa53bab6734af57b5dd335f0fbb3ddd.pt-br","_resolvedLanguagePackCoreLocation":"C:\\Users\\anaca\\AppData\\Roaming\\Code\\clp\\6fa53bab6734af57b5dd335f0fbb3ddd.pt-br\\8dfae7a5cd50421d10cd99cb873990460525a898","_corruptedFile":"C:\\Users\\anaca\\AppData\\Roaming\\Code\\clp\\6fa53bab6734af57b5dd335f0fbb3ddd.pt-br\\corrupted.info","_languagePackSupport":true}
 # environment
 ONEDRIVE = C:\Users\anaca\OneDrive
 # environment
@@ -55,7 +56,7 @@ PROGRAMW6432 = C:\Program Files
 # environment
 PROGRAMDATA = C:\ProgramData
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-05f609d8-74f5-4e7e-be0a-970e987b5bad-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-7ec60363-7cea-4629-8960-424149020237-sock
 # environment
 VSCODE_CWD = C:\Users\anaca\AppData\Local\Programs\Microsoft VS Code
 # environment
@@ -79,7 +80,7 @@ ELECTRON_RUN_AS_NODE = 1
 # automatic
 %F = $(notdir $%)
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_12920_VAZBJQHQMKSSJHZO
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_11896_PNMEXEFEKIPYGWRG
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
@@ -97,7 +98,7 @@ PUBLIC = C:\Users\Public
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
-VSCODE_CODE_CACHE_PATH = C:\Users\anaca\AppData\Roaming\Code\CachedData\e18005f0f1b33c29e81d732535d8c0e47cafb0b5
+VSCODE_CODE_CACHE_PATH = C:\Users\anaca\AppData\Roaming\Code\CachedData\8dfae7a5cd50421d10cd99cb873990460525a898
 # environment
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # environment
@@ -136,12 +137,13 @@ PROCESSOR_ARCHITEW6432 = AMD64
 .VARIABLES := 
 # automatic
 *F = $(notdir $*)
-# environment
+# environmen 
+t
 PROCESSOR_IDENTIFIER = AMD64 Family 23 Model 17 Stepping 0, AuthenticAMD
 # environment
 OS = Windows_NT
 # environment
-VSCODE_IPC_HOOK = \\.\pipe\b81ecf2b8d71454d4cdce1dc42a8841c-1.66.0-main-sock
+VSCODE_IPC_HOOK = \\.\pipe\b81ecf2b8d71454d4cdce1dc42a8841c-1.66.1-main-sock
 # environment
 HOMEPATH = \Users\anaca
 # environment
@@ -191,7 +193,7 @@ PROCESSOR_LEVEL = 23
 # environment
 FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
 # environment
-VSCODE_PID = 12920
+VSCODE_PID = 11896
 # environment
 USERDOMAIN_ROAMINGPROFILE = ANNYQUALLIO
 # variable set hash-table stats:
@@ -206,11 +208,11 @@ USERDOMAIN_ROAMINGPROFILE = ANNYQUALLIO
 # C:\Windows\System32\WindowsPowerShell\v1.0\ (key C:/Windows/System32/WindowsPowerShell/v1.0/, mtime 1622915765): 29 files, no impossibilities.
 # . (key c:/Users/anaca/Documents/GitHub/Estudos/Estrutura de Dados 2/Ordena��o, mtime 1648748870): 9 files, no impossibilities.
 # C:\Program Files (x86)\Common Files\Oracle\Java\javapath (key C:/Program Files (x86)/Common Files/Oracle/Java/javapath, mtime 1635536604): 5 files, no impossibilities.
-# C:\Users\anaca\AppData\Local\Microsoft\WindowsApps (key C:/Users/anaca/AppData/Local/Microsoft/WindowsApps, mtime 1647794395): 24 files, no impossibilities.
+# C:\Users\anaca\AppData\Local\Microsoft\WindowsApps (key C:/Users/anaca/AppData/Local/Microsoft/WindowsApps, mtime 1649168762): 24 files, no impossibilities.
 # C:\Program Files\Git\cmd (key C:/Program Files/Git/cmd, mtime 1642947387): 8 files, no impossibilities.
 # C:\Windows\System32\OpenSSH\: could not be stat'd.
 # C:\MinGW\bin (key C:/MinGW/bin, mtime 1636990268): 60 files, no impossibilities.
-# C:\Users\anaca\AppData\Local\Programs\Microsoft VS Code\bin (key C:/Users/anaca/AppData/Local/Programs/Microsoft VS Code/bin, mtime 1648730755): 4 files, no impossibilities.
+# C:\Users\anaca\AppData\Local\Programs\Microsoft VS Code\bin (key C:/Users/anaca/AppData/Local/Programs/Microsoft VS Code/bin, mtime 1649354390): 4 files, no impossibilities.
 # C:\ProgramData\anaca\GitHubDesktop\bin (key C:/ProgramData/anaca/GitHubDesktop/bin, mtime 1643576671): 4 files, no impossibilities.
 # C:\Windows (key C:/Windows, mtime 1648148854): 111 files, no impossibilities.
 # C:\Users\anaca\anaconda3 (key C:/Users/anaca/anaconda3, mtime 1637064976): 90 files, no impossibilities.
@@ -275,7 +277,8 @@ Makefile:
 # Not a target:
 .DEFAULT:
 #  Implicit rule search has not been done.
-#  Modification time never checked.
+#  Modification time n 
+ever checked.
 #  File has not been updated.
 
 # files hash-table stats:
@@ -294,6 +297,6 @@ Makefile:
 # strcache performance: lookups = 4890 / hit rate = 4%
 # hash-table stats:
 # Load=4689/8192=57%, Rehash=0, Collisions=2532/4890=52%
-# Finished Make data base on Thu Mar 31 14:56:08 2022
+# Finished Make data base on Fri Apr 08 15:05:06 2022
 
  

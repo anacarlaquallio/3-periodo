@@ -53,7 +53,8 @@ int main(int argc, char **argv)
     // selection_sort(v, n);
     // bubble_sort (v, n);
     // merge_sort(v, 0, n - 1);
-    quick_sort(v, 0, n - 1);
+    // quick_sort(v, 0, n - 1);
+    radix_sort(v, n);
 
 #if DEBUG
     printf("\n");
