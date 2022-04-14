@@ -7,7 +7,7 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # There is NO WARRANTY, to the extent permitted by law.
  
 
-# Make data base, printed on Fri Apr 08 15:05:06 2022
+# Make data base, printed on Thu Apr 14 14:48:27 2022
 
 # Variables
 
@@ -38,7 +38,7 @@ SHELL := sh.exe
 # environment
 WINDIR = C:\Windows
 # environment
-VSCODE_NLS_CONFIG = {"locale":"pt-br","availableLanguages":{"*":"pt-br"},"_languagePackId":"6fa53bab6734af57b5dd335f0fbb3ddd.pt-br","_translationsConfigFile":"C:\\Users\\anaca\\AppData\\Roaming\\Code\\clp\\6fa53bab6734af57b5dd335f0fbb3ddd.pt-br\\tcf.json","_cacheRoot":"C:\\Users\\anaca\\AppData\\Roaming\\Code\\clp\\6fa53bab6734af57b5dd335f0fbb3ddd.pt-br","_resolvedLanguagePackCoreLocation":"C:\\Users\\anaca\\AppData\\Roaming\\Code\\clp\\6fa53bab6734af57b5dd335f0fbb3ddd.pt-br\\8dfae7a5cd50421d10cd99cb873990460525a898","_corruptedFile":"C:\\Users\\anaca\\AppData\\Roaming\\Code\\clp\\6fa53bab6734af57b5dd335f0fbb3ddd.pt-br\\corrupted.info","_languagePackSupport":true}
+VSCODE_NLS_CONFIG = {"locale":"pt-br","availableLanguages":{"*":"pt-br"},"_languagePackId":"44227f601049c951edcdcbe90dfef21e.pt-br","_translationsConfigFile":"C:\\Users\\anaca\\AppData\\Roaming\\Code\\clp\\44227f601049c951edcdcbe90dfef21e.pt-br\\tcf.json","_cacheRoot":"C:\\Users\\anaca\\AppData\\Roaming\\Code\\clp\\44227f601049c951edcdcbe90dfef21e.pt-br","_resolvedLanguagePackCoreLocation":"C:\\Users\\anaca\\AppData\\Roaming\\Code\\clp\\44227f601049c951edcdcbe90dfef21e.pt-br\\8dfae7a5cd50421d10cd99cb873990460525a898","_corruptedFile":"C:\\Users\\anaca\\AppData\\Roaming\\Code\\clp\\44227f601049c951edcdcbe90dfef21e.pt-br\\corrupted.info","_languagePackSupport":true}
 # environment
 ONEDRIVE = C:\Users\anaca\OneDrive
 # environment
@@ -56,9 +56,9 @@ PROGRAMW6432 = C:\Program Files
 # environment
 PROGRAMDATA = C:\ProgramData
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-7ec60363-7cea-4629-8960-424149020237-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-a8cf1d32-da38-4950-8695-1947fba53994-sock
 # environment
-VSCODE_CWD = C:\Users\anaca\AppData\Local\Programs\Microsoft VS Code
+VSCODE_CWD = C:\Windows\System32
 # environment
 PATH = C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Users\anaca\anaconda3;C:\Users\anaca\anaconda3\Library\mingw-w64\bin;C:\Users\anaca\anaconda3\Library\usr\bin;C:\Users\anaca\anaconda3\Library\bin;C:\Users\anaca\anaconda3\Scripts;C:\Users\anaca\AppData\Local\Microsoft\WindowsApps;C:\Users\anaca\AppData\Local\Programs\Microsoft VS Code\bin;C:\MinGW\bin;C:\ProgramData\anaca\GitHubDesktop\bin;C:\Users\anaca\AppData\Local\Programs\MiKTeX\miktex\bin\x64\
 # environment
@@ -80,7 +80,7 @@ ELECTRON_RUN_AS_NODE = 1
 # automatic
 %F = $(notdir $%)
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_11896_PNMEXEFEKIPYGWRG
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_2640_VLXQYXTJAXXPTVOL
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
@@ -100,7 +100,7 @@ VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
 VSCODE_CODE_CACHE_PATH = C:\Users\anaca\AppData\Roaming\Code\CachedData\8dfae7a5cd50421d10cd99cb873990460525a898
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
 # environment
 COMMONPROGRAMFILES = C:\Program Files (x86)\Common Files
 # environment
@@ -137,8 +137,7 @@ PROCESSOR_ARCHITEW6432 = AMD64
 .VARIABLES := 
 # automatic
 *F = $(notdir $*)
-# environmen 
-t
+# environment
 PROCESSOR_IDENTIFIER = AMD64 Family 23 Model 17 Stepping 0, AuthenticAMD
 # environment
 OS = Windows_NT
@@ -193,7 +192,7 @@ PROCESSOR_LEVEL = 23
 # environment
 FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
 # environment
-VSCODE_PID = 11896
+VSCODE_PID = 2640
 # environment
 USERDOMAIN_ROAMINGPROFILE = ANNYQUALLIO
 # variable set hash-table stats:
@@ -206,21 +205,21 @@ USERDOMAIN_ROAMINGPROFILE = ANNYQUALLIO
 # Directories
 
 # C:\Windows\System32\WindowsPowerShell\v1.0\ (key C:/Windows/System32/WindowsPowerShell/v1.0/, mtime 1622915765): 29 files, no impossibilities.
-# . (key c:/Users/anaca/Documents/GitHub/Estudos/Estrutura de Dados 2/Ordena��o, mtime 1648748870): 9 files, no impossibilities.
+# . (key c:/Users/anaca/Documents/GitHub/Estudos/Estrutura de Dados 2/Ordena��o, mtime 1649442298): 9 files, no impossibilities.
 # C:\Program Files (x86)\Common Files\Oracle\Java\javapath (key C:/Program Files (x86)/Common Files/Oracle/Java/javapath, mtime 1635536604): 5 files, no impossibilities.
-# C:\Users\anaca\AppData\Local\Microsoft\WindowsApps (key C:/Users/anaca/AppData/Local/Microsoft/WindowsApps, mtime 1649168762): 24 files, no impossibilities.
+# C:\Users\anaca\AppData\Local\Microsoft\WindowsApps (key C:/Users/anaca/AppData/Local/Microsoft/WindowsApps, mtime 1649941478): 24 files, no impossibilities.
 # C:\Program Files\Git\cmd (key C:/Program Files/Git/cmd, mtime 1642947387): 8 files, no impossibilities.
 # C:\Windows\System32\OpenSSH\: could not be stat'd.
 # C:\MinGW\bin (key C:/MinGW/bin, mtime 1636990268): 60 files, no impossibilities.
 # C:\Users\anaca\AppData\Local\Programs\Microsoft VS Code\bin (key C:/Users/anaca/AppData/Local/Programs/Microsoft VS Code/bin, mtime 1649354390): 4 files, no impossibilities.
 # C:\ProgramData\anaca\GitHubDesktop\bin (key C:/ProgramData/anaca/GitHubDesktop/bin, mtime 1643576671): 4 files, no impossibilities.
-# C:\Windows (key C:/Windows, mtime 1648148854): 111 files, no impossibilities.
+# C:\Windows (key C:/Windows, mtime 1649687179): 111 files, no impossibilities.
 # C:\Users\anaca\anaconda3 (key C:/Users/anaca/anaconda3, mtime 1637064976): 90 files, no impossibilities.
 # C:\Windows\System32\Wbem (key C:/Windows/System32/Wbem, mtime 1643723803): 155 files, no impossibilities.
 # C:\Users\anaca\anaconda3\Library\usr\bin: could not be stat'd.
 # C:\Users\anaca\AppData\Local\Programs\MiKTeX\miktex\bin\x64\ (key C:/Users/anaca/AppData/Local/Programs/MiKTeX/miktex/bin/x64/, mtime 1643631935): 711 files, no impossibilities.
 # C:\Users\anaca\anaconda3\Library\bin (key C:/Users/anaca/anaconda3/Library/bin, mtime 1637064976): 431 files, no impossibilities.
-# C:\Windows\system32 (key C:/Windows/system32, mtime 1647010824): 2883 files, no impossibilities.
+# C:\Windows\system32 (key C:/Windows/system32, mtime 1649687763): 2883 files, no impossibilities.
 # C:\Users\anaca\anaconda3\Scripts (key C:/Users/anaca/anaconda3/Scripts, mtime 1637064976): 324 files, no impossibilities.
 # C:\Users\anaca\anaconda3\Library\mingw-w64\bin (key C:/Users/anaca/anaconda3/Library/mingw-w64/bin, mtime 1636660929): 15 files, no impossibilities.
 
@@ -277,8 +276,7 @@ Makefile:
 # Not a target:
 .DEFAULT:
 #  Implicit rule search has not been done.
-#  Modification time n 
-ever checked.
+#  Modification time never checked.
 #  File has not been updated.
 
 # files hash-table stats:
@@ -297,6 +295,6 @@ ever checked.
 # strcache performance: lookups = 4890 / hit rate = 4%
 # hash-table stats:
 # Load=4689/8192=57%, Rehash=0, Collisions=2532/4890=52%
-# Finished Make data base on Fri Apr 08 15:05:06 2022
+# Finished Make data base on Thu Apr 14 14:48:27 2022
 
  
