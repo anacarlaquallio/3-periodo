@@ -7,7 +7,7 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # There is NO WARRANTY, to the extent permitted by law.
  
 
-# Make data base, printed on Fri Apr 29 10:37:35 2022
+# Make data base, printed on Fri Apr 29 10:55:47 2022
 
 # Variables
 
@@ -32,7 +32,7 @@ HOMEDRIVE = C:
 # automatic
 ^D = $(patsubst %/,%,$(patsubst %\,%,$(dir $^)))
 # makefile
-CURDIR := c:/Users/anaca/Documents/GitHub/Estudos/Estrutura de Dados 2/Ordena��o
+CURDIR := c:/Users/anaca/Documents/GitHub/Estudos/Estrutura de Dados 2/Busca bin�ria
 # default
 SHELL := sh.exe
 # environment
@@ -43,8 +43,8 @@ VSCODE_NLS_CONFIG = {"locale":"pt-br","availableLanguages":{"*":"pt-br"},"_langu
 ONEDRIVE = C:\Users\anaca\OneDrive
 # environment
 PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
-# makefile (from 'Makefile', line 1)
-MAKEFILE_LIST :=  Makefile
+# makefile (from 'makefile', line 1)
+MAKEFILE_LIST :=  makefile
 # environment
 FPS_BROWSER_USER_PROFILE_STRING = Default
 # environment
@@ -56,7 +56,7 @@ PROGRAMW6432 = C:\Program Files
 # environment
 PROGRAMDATA = C:\ProgramData
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-583b70d3-a7de-4b5b-a7f4-16effd598d68-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-6ebf6a62-ec88-4883-8f98-4c7fec1f2066-sock
 # environment
 VSCODE_CWD = C:\Users\anaca\AppData\Local\Programs\Microsoft VS Code
 # environment
@@ -205,7 +205,7 @@ USERDOMAIN_ROAMINGPROFILE = ANNYQUALLIO
 # Directories
 
 # C:\Windows\System32\WindowsPowerShell\v1.0\ (key C:/Windows/System32/WindowsPowerShell/v1.0/, mtime 1622915765): 29 files, no impossibilities.
-# . (key c:/Users/anaca/Documents/GitHub/Estudos/Estrutura de Dados 2/Ordena��o, mtime 1649442298): 9 files, no impossibilities.
+# . (key c:/Users/anaca/Documents/GitHub/Estudos/Estrutura de Dados 2/Busca bin�ria, mtime 1651240547): 8 files, no impossibilities.
 # C:\Program Files (x86)\Common Files\Oracle\Java\javapath (key C:/Program Files (x86)/Common Files/Oracle/Java/javapath, mtime 1635536604): 5 files, no impossibilities.
 # C:\Users\anaca\AppData\Local\Microsoft\WindowsApps (key C:/Users/anaca/AppData/Local/Microsoft/WindowsApps, mtime 1651238143): 24 files, no impossibilities.
 # C:\Program Files\Git\cmd (key C:/Program Files/Git/cmd, mtime 1642947387): 8 files, no impossibilities.
@@ -223,7 +223,7 @@ USERDOMAIN_ROAMINGPROFILE = ANNYQUALLIO
 # C:\Users\anaca\anaconda3\Scripts (key C:/Users/anaca/anaconda3/Scripts, mtime 1637064976): 324 files, no impossibilities.
 # C:\Users\anaca\anaconda3\Library\mingw-w64\bin (key C:/Users/anaca/anaconda3/Library/mingw-w64/bin, mtime 1636660929): 15 files, no impossibilities.
 
-# 4863 files, no impossibilities in 18 directories.
+# 4862 files, no impossibilities in 18 directories.
 
 # Implicit Rules
 
@@ -256,7 +256,7 @@ all:
 # ? := 
 # variable set hash-table stats:
 # Load=8/32=25%, Rehash=0, Collisions=1/11=9%
-#  recipe to execute (from 'Makefile', line 2):
+#  recipe to execute (from 'makefile', line 2):
 	gcc -g *.c -o main
 	
 
@@ -267,9 +267,9 @@ all:
 #  File has not been updated.
 
 # Not a target:
-Makefile:
+makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-03-17 17:35:26
+#  Last modified 2022-04-14 14:36:18
 #  File has been updated.
 #  Successfully updated.
 
@@ -287,14 +287,14 @@ Makefile:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 9 (8) / strings = 4689 / storage = 71796 B / avg = 15 B
+# strcache buffers: 9 (8) / strings = 4688 / storage = 71797 B / avg = 15 B
 # current buf: size = 8174 B / used = 6452 B / count = 395 / avg = 16 B
-# other used: total = 63622 B / count = 4294 / avg = 14 B
-# other free: total = 48 B / max = 10 B / min = 2 B / avg = 6 B
+# other used: total = 63623 B / count = 4293 / avg = 14 B
+# other free: total = 47 B / max = 10 B / min = 2 B / avg = 5 B
 
-# strcache performance: lookups = 4890 / hit rate = 4%
+# strcache performance: lookups = 4889 / hit rate = 4%
 # hash-table stats:
-# Load=4689/8192=57%, Rehash=0, Collisions=2532/4890=52%
-# Finished Make data base on Fri Apr 29 10:37:35 2022
+# Load=4688/8192=57%, Rehash=0, Collisions=2530/4889=52%
+# Finished Make data base on Fri Apr 29 10:55:47 2022
 
  

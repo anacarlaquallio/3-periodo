@@ -1,0 +1,6 @@
+make.exe --dry-run --always-make --keep-going --print-directory
+make.exe: Entering directory 'c:/Users/anaca/Documents/Calc/anaCarlaQuallioRosaCalc/anaCarlaQuallioRosaCalc'
+g++ *.cpp -o main.exe
+./main.exe
+make.exe: Leaving directory 'c:/Users/anaca/Documents/Calc/anaCarlaQuallioRosaCalc/anaCarlaQuallioRosaCalc'
+ 

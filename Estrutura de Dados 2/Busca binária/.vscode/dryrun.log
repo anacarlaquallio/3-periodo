@@ -1,0 +1,4 @@
+make.exe: Entering directory 'c:/Users/anaca/Documents/GitHub/Estudos/Estrutura de Dados 2/Busca bin�ria'
+gcc -g *.c -o main
+make.exe: Leaving directory 'c:/Users/anaca/Documents/GitHub/Estudos/Estrutura de Dados 2/Busca bin�ria'
+ 

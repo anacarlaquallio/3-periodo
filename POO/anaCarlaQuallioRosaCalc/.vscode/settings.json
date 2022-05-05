@@ -1,0 +1,14 @@
+{
+    "files.associations": {
+        "deque": "cpp",
+        "string": "cpp",
+        "vector": "cpp",
+        "optional": "cpp",
+        "functional": "cpp",
+        "limits": "cpp",
+        "numeric": "cpp",
+        "tuple": "cpp",
+        "iostream": "cpp"
+    },
+    "git.ignoreLimitWarning": true
+}
