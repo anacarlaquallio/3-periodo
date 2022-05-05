@@ -88,7 +88,7 @@ void anaCarlaCpu::receiveControl(Control c)
         break;
     case MEMORY_READ_CLEAR:
         this->intToDigit(this->memory);
-        if (this->operation == NULL)
+        if (this->operation == NONE)
             this->clearArray(this->operando1);
         else
             this->clearArray(this->operando2);

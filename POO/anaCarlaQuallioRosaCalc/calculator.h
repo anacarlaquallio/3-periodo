@@ -4,7 +4,7 @@ enum Digit
     ZERO,
     ONE,
     TWO,
-    THRE,
+    THREE,
     FOUR,
     FIVE,
     SIX,

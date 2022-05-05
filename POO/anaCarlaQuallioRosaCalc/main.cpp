@@ -11,7 +11,7 @@ int main()
     anaCarlaDisplay display1;
     anaCarlaCpu cpu1;
     anaCarlaKeyboard k1;
-    KeyDigit key0(ZERO), key1(ONE), key2(TWO), key3(THRE), key4(FOUR), key5(FIVE), key6(SIX), key7(SEVEN), key8(EIGHT), key9(NINE);
+    KeyDigit key0(ZERO), key1(ONE), key2(TWO), key3(THREE), key4(FOUR), key5(FIVE), key6(SIX), key7(SEVEN), key8(EIGHT), key9(NINE);
     KeyOperation keyAddition(ADDITION), keySubtraction(SUBTRACTION), keyDivison(DIVISION), keyMultiplication(MULTIPLICATION), keySquareRoot(SQUARE_ROOT), keyPercentage(PERCENTAGE);
     KeyControl keyEqual(EQUAL), keyClear(CLEAR), keyReset(RESET), keyDecimalSeparate(DECIMAL_SEPARATOR), keyMRC(MEMORY_READ_CLEAR), keyMAddition(MEMORY_ADDITION), keyMSubtraction(MEMORY_SUBTRACTION);
 
