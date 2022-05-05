@@ -2,7 +2,6 @@
 #include "calculator.h"
 #include <iostream>
 #include <math.h>
-#include "anaCarlaDisplay.h"
 
 class anaCarlaCpu : public Cpu
 {
