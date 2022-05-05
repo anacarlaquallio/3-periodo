@@ -1,0 +1,7 @@
+make.exe --dry-run --always-make --keep-going --print-directory
+make.exe: Entering directory 'c:/Users/anaca/Documents/GitHub/Estudos/BCC33A/hashing/ed'
+gcc -g -c ilist.c -o ilist.o
+gcc -g -c hashtable_ed.c -o hashtable_ed.o
+gcc -g -o main main.c ilist.o hashtable_ed.o
+make.exe: Leaving directory 'c:/Users/anaca/Documents/GitHub/Estudos/BCC33A/hashing/ed'
+ 
