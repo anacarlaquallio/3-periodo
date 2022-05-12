@@ -1,2 +1,2 @@
-# Estudos
-Repositório criado para armazenar os códigos das aulas do curso de Ciência da Computação.
+# 3 período
+Repositório criado para armazenar os códigos das aulas do 3 período curso de Ciência da Computação.
