@@ -40,13 +40,9 @@ void anaCarlaCpu::verificaDecimalSeparator(int countDecimal)
 
 void anaCarlaCpu::receiveDigit(Digit d)
 {
-    try
-    {
 
-        if (this->operando1Count >= this->maxDigits)
-            throw;
-        if (this->operando2Count >= this->maxDigits)
-            throw;
+    if (this->operando1Count <= this->maxDigits && this->operando2Count <= this->maxDigits)
+    {
 
         this->display->add(d);
 
@@ -60,9 +56,6 @@ void anaCarlaCpu::receiveDigit(Digit d)
             this->operando2[this->operando2Count] = d;
             this->operando2Count++;
         }
-    }
-    catch (...)
-    {
     }
 }
 
