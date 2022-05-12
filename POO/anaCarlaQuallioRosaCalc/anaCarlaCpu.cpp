@@ -40,7 +40,6 @@ void anaCarlaCpu::verificaDecimalSeparator(int countDecimal)
 
 void anaCarlaCpu::receiveDigit(Digit d)
 {
-
     if (this->operando1Count <= this->maxDigits && this->operando2Count <= this->maxDigits)
     {
 
