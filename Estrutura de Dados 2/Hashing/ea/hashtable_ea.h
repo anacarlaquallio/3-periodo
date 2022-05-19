@@ -14,6 +14,7 @@ typedef struct ELEM{
 
 typedef struct THEA{
     int m;
+    int n;
     ELEM* TH;
 } THEA;
 

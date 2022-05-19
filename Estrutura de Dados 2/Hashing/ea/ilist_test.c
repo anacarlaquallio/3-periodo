@@ -2,8 +2,6 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-#include "ilist.h"
-
 int main(int argc, char** argv){
     
     int n;    
