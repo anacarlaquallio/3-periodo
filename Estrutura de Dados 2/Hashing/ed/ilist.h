@@ -9,7 +9,7 @@ typedef struct INOH{
 } INOH;
 
 typedef struct ILIST{
-    INOH *nos;
+    INOH *nos; // vetor dinâmico de nós
     int max;
     int tam;
     int alloc;

@@ -3,8 +3,10 @@
 #include "ilist.h"
 
 typedef struct THED {
-    ILIST** t;
-    int m, n;
+    ILIST** t; // a tabela é um vetor e cada posição possui uma lista
+    // cada posição vai ter um ponteiro para ILIST, por isso é **
+    int m, n; // n = qtd de elementos que a gente inseriu, m é a qtd de listas, endereços
+    // n/m vai ser o comprimento das listas
 } THED;
 
 int THED_Hash(THED* HT, int chave);
