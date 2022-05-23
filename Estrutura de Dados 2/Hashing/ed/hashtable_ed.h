@@ -9,6 +9,7 @@ typedef struct THED {
     // n/m vai ser o comprimento das listas
 } THED;
 
+unsigned int string_hash(char *string, int M);
 int THED_Hash(THED* HT, int chave);
 THED* THED_Criar(int m, int alloc_step);
 void THED_Inserir(THED* HT, int chave, int valor);
@@ -18,3 +19,5 @@ void THED_Imprimir(THED* HT);
 size_t THED_N(THED* HT);
 ILIST* THED_Chaves(THED* HT);
 void THED_Destruir(THED* HT);
+int min(THED *HT);
+int max(THED *HT);

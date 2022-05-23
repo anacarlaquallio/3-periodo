@@ -48,5 +48,8 @@ int main(int argc, char **argv)
 
     THED_Destruir(ht);
 
+    int valor = string_hash("ABC", 37);
+    printf("Valor HASH string: %d\n", valor);
+
     return EXIT_SUCCESS;
 }
