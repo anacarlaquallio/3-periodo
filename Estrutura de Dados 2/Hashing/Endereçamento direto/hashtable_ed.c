@@ -109,10 +109,3 @@ void THED_Destruir(THED *HT)
     free(HT->t);
     free(HT);
 }
-
-int min(THED *HT)
-{
-}
-int max(THED *HT)
-{
-}

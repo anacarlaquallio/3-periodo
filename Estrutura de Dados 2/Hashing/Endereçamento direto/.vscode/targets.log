@@ -7,7 +7,7 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # There is NO WARRANTY, to the extent permitted by law.
  
 
-# Make data base, printed on Sat May 21 18:42:40 2022
+# Make data base, printed on Wed Jun 01 11:19:14 2022
 
 # Variables
 
@@ -32,7 +32,7 @@ HOMEDRIVE = C:
 # automatic
 ^D = $(patsubst %/,%,$(patsubst %\,%,$(dir $^)))
 # makefile
-CURDIR := c:/Users/anaca/Documents/GitHub/3-periodo/Estrutura de Dados 2/Hashing/ed
+CURDIR := c:/Users/anaca/Documents/GitHub/3-periodo/Estrutura de Dados 2/Hashing/Endere�amento direto
 # default
 SHELL := sh.exe
 # environment
@@ -56,7 +56,7 @@ PROGRAMW6432 = C:\Program Files
 # environment
 PROGRAMDATA = C:\ProgramData
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-44ebe772-c8eb-4ed4-9ed8-549555365de2-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-f232f97e-7d4d-4aa1-8847-d5eb2814e291-sock
 # environment
 VSCODE_CWD = C:\Users\anaca\AppData\Local\Programs\Microsoft VS Code
 # environment
@@ -80,7 +80,7 @@ ELECTRON_RUN_AS_NODE = 1
 # automatic
 %F = $(notdir $%)
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_11756_RNDHLBKZGYONAYLB
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_1332_EJRIASNZETELPIGY
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
@@ -162,8 +162,6 @@ SYSTEMROOT = C:\Windows
 # environment
 APPDATA = C:\Users\anaca\AppData\Roaming
 # environment
-__COMPAT_LAYER = DetectorsAppHealth
-# environment
 TEMP = C:\Users\anaca\AppData\Local\Temp
 # environment
 COMSPEC = C:\Windows\system32\cmd.exe
@@ -194,11 +192,11 @@ PROCESSOR_LEVEL = 23
 # environment
 FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
 # environment
-VSCODE_PID = 11756
+VSCODE_PID = 1332
 # environment
 USERDOMAIN_ROAMINGPROFILE = ANNYQUALLIO
 # variable set hash-table stats:
-# Load=93/1024=9%, Rehash=0, Collisions=11/115=10%
+# Load=92/1024=9%, Rehash=0, Collisions=11/114=10%
 
 # Pattern-specific Variable Values
 
@@ -207,26 +205,27 @@ USERDOMAIN_ROAMINGPROFILE = ANNYQUALLIO
 # Directories
 
 # C:\Windows\System32\WindowsPowerShell\v1.0\ (key C:/Windows/System32/WindowsPowerShell/v1.0/, mtime 1622915765): 29 files, no impossibilities.
-# . (key c:/Users/anaca/Documents/GitHub/3-periodo/Estrutura de Dados 2/Hashing/ed, mtime 1653167760): 12 files, no impossibilities.
+# . (key c:/Users/anaca/Documents/GitHub/3-periodo/Estrutura de Dados 2/Hashing/Endere�amento direto, mtime 1653167760): 12 files, no impossibilities.
 # C:\Program Files (x86)\Common Files\Oracle\Java\javapath (key C:/Program Files (x86)/Common Files/Oracle/Java/javapath, mtime 1635536604): 5 files, no impossibilities.
-# C:\Users\anaca\AppData\Local\Microsoft\WindowsApps (key C:/Users/anaca/AppData/Local/Microsoft/WindowsApps, mtime 1652543816): 24 files, no impossibilities.
+# C:\Users\anaca\AppData\Local\Microsoft\WindowsApps (key C:/Users/anaca/AppData/Local/Microsoft/WindowsApps,  
+mtime 1653860575): 26 files, no impossibilities.
 # C:\Program Files\Git\cmd (key C:/Program Files/Git/cmd, mtime 1642947387): 8 files, no impossibilities.
 # C:\Windows\System32\OpenSSH\: could not be stat'd.
 # C:\MinGW\bin (key C:/MinGW/bin, mtime 1636990268): 60 files, no impossibilities.
 # C:\Users\anaca\AppData\Local\Programs\Microsoft VS Code\bin (key C:/Users/anaca/AppData/Local/Programs/Microsoft VS Code/bin, mtime 1652981868): 4 files, no impossibilities.
 # C:\ProgramData\anaca\GitHubDesktop\bin (key C:/ProgramData/anaca/GitHubDesktop/bin, mtime 1643576671): 4 files, no impossibilities.
-# C:\Windows (key C:/Windows, mtime 1650052786): 111 files, no impossibilities.
-# C:\Users\anaca\anaconda3 (key C:/Users/anaca/anaconda3, mtime 1652535362): 90 files, no impossibilities.
+# C:\Windows (key C:/Windows, mtime 1653403600): 111 files, no impossibilities.
+# C:\Users\anaca\anaconda3 (key C:/Users/anaca/anaconda3, mtime 1653397588): 90 files, no impossibilities.
 # C:\Program Files\MATLAB\R2022a\bin (key C:/Program Files/MATLAB/R2022a/bin, mtime 1652533357): 14 files, no impossibilities.
-# C:\Windows\System32\Wbem (key C:/Windows/System32/Wbem, mtime 1643723803): 155 files, no impossibilities.
+# C:\Windows\System32\Wbem (key C:/Windows/System32/Wbem, mtime 1653403246): 155 files, no impossibilities.
 # C:\Users\anaca\anaconda3\Library\usr\bin: could not be stat'd.
 # C:\Users\anaca\AppData\Local\Programs\MiKTeX\miktex\bin\x64\ (key C:/Users/anaca/AppData/Local/Programs/MiKTeX/miktex/bin/x64/, mtime 1643631935): 711 files, no impossibilities.
-# C:\Users\anaca\anaconda3\Library\bin (key C:/Users/anaca/anaconda3/Library/bin, mtime 1637064976): 431 files, no impossibilities.
-# C:\Windows\system32 (key C:/Windows/system32, mtime 1652472104): 2883 files, no impossibilities.
-# C:\Users\anaca\anaconda3\Scripts (key C:/Users/anaca/anaconda3/Scripts, mtime 1637064976): 324 files, no impossibilities.
+# C:\Users\anaca\anaconda3\Library\bin (key C:/Users/anaca/anaconda3/Library/bin, mtime 1653397588): 506 files, no impossibilities.
+# C:\Windows\system32 (key C:/Windows/system32, mtime 1653403956): 2883 files, no impossibilities.
+# C:\Users\anaca\anaconda3\Scripts (key C:/Users/anaca/anaconda3/Scripts, mtime 1653397588): 354 files, no impossibilities.
 # C:\Users\anaca\anaconda3\Library\mingw-w64\bin (key C:/Users/anaca/anaconda3/Library/mingw-w64/bin, mtime 1636660929): 15 files, no impossibilities.
 
-# 4880 files, no impossibilities in 19 directories.
+# 4987 files, no impossibilities in 19 directories.
 
 # Implicit Rules
 
@@ -291,14 +290,14 @@ Makefile:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 9 (7) / strings = 4705 / storage = 72019 B / avg = 15 B
-# current buf: size = 8174 B / used = 6686 B / count = 407 / avg = 16 B
-# other used: total = 63845 B / count = 4298 / avg = 14 B
-# other free: total = 59 B / max = 16 B / min = 2 B / avg = 7 B
+# strcache buffers: 10 (9) / strings = 4812 / storage = 73967 B / avg = 15 B
+# current buf: size = 8174 B / used = 471 B / count = 39 / avg = 12 B
+# other used: total = 65793 B / count = 4773 / avg = 13 B
+# other free: total = 70 B / max = 15 B / min = 2 B / avg = 7 B
 
-# strcache performance: lookups = 4908 / hit rate = 4%
+# strcache performance: lookups = 5015 / hit rate = 4%
 # hash-table stats:
-# Load=4705/8192=57%, Rehash=0, Collisions=2550/4908=52%
-# Finished Make data base on Sat May 21 18:42:40 2022
+# Load=4812/8192=59%, Rehash=0, Collisions=2676/5015=53%
+# Finished Make data base on Wed Jun 01 11:19:14 2022
 
  

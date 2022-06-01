@@ -13,13 +13,13 @@ static void THEA_Redimensionar(THEA *TH, int novo_m) // static serve para impedi
     nova = malloc(sizeof(ELEM) * novo_m); // aloca a nova tabela com novo m
     for (int i = 0; i < novo_m; i++)
         nova[i].estado = E_LIVRE; // passa por todos os elementos setando eles como livres
-    antiga = TH->TH; // salvar a tabela antiga
-    m_antigo = TH->m; // salvar o m antigo
-    TH->TH = nova; //ligamos a tabela
-    TH->n = 0; // reseta o n para 0; o inserir já atualiza o n da forma correta
+    antiga = TH->TH;              // salvar a tabela antiga
+    m_antigo = TH->m;             // salvar o m antigo
+    TH->TH = nova;                // ligamos a tabela
+    TH->n = 0;                    // reseta o n para 0; o inserir já atualiza o n da forma correta
     TH->m = novo_m;
     for (int i = 0; i < m_antigo; i++)
-        if (antiga[i].estado == E_OCUPADO) // se o elemento atual na tabela antiga é ocupado
+        if (antiga[i].estado == E_OCUPADO)                      // se o elemento atual na tabela antiga é ocupado
             THEA_Inserir(TH, antiga[i].chave, antiga[i].valor); // vai inserir as chaves e valores na tabela nova
     free(antiga);
 }
@@ -34,15 +34,17 @@ THEA *THEA_Criar(int m)
     // criar uma instância da estrutura da tabela hash
     // salva valor de m
     // aloca dinamicamente todos os elementos da tabela
-    // marcar os elementos coomo livres
+    // marcar os elementos como livres
 
     THEA *nova;
     nova = malloc(sizeof(THEA));
+    nova->TH = malloc(sizeof(ELEM) * m);
     nova->m = m;
     nova->n = 0;
-    nova->TH = malloc(sizeof(ELEM) * m);
-    for (int i = 0; i < m; i++) // passa por todos os elementos da tabela, atribuindo o estado livre
+    for (int i = 0; i < m; i++)
+    { // passa por todos os elementos da tabela, atribuindo o estado livre
         nova->TH[i].estado = E_LIVRE;
+    }
     return nova; // retorna a tabela que acabamos de alocar
 }
 
@@ -53,7 +55,9 @@ int THEA_Inserir(THEA *TH, int chave, int valor)
     if (h >= 0) // se a chave está na tabela
     {
         TH->n--; // decrementa o n quando encontramos uma repetição, pois é incrementado abaixo independente se o valor é repetido ou não
+        // caso a chave está na tabela, apenas o valor é modificado
     }
+    // se não estiver na tabela, basta inserir
     else
     {
         k = 0;
@@ -75,9 +79,9 @@ int THEA_Inserir(THEA *TH, int chave, int valor)
             h = THEA_Hash(TH, chave, k); // calcula uma nova hash com k++
             if (h == h_inicial)          // se h for igual ao inicial, não foi possível fazer a inserção pq não tem espaço
                 return -1;
-        }
+        } // quando termina este while quer dizer que achou uma posição que está livre ou apagada
     }
-    TH->n++; // conta que está ocupado
+    TH->n++; // conta o que está ocupado
     // na tabela hash na posição h vamos atribuir a chave, o valor e o estado como ocupado
     TH->TH[h].chave = chave;
     TH->TH[h].valor = valor;
@@ -90,7 +94,7 @@ int THEA_Buscar(THEA *TH, int chave)
 {
     // dado uma chave, queremos descobrir qual elemento que tem ela e se está na tabela
     // primeiro calcula a hash da chave e vai olhar para aquela posição na tabela
-    // só vai estar válido se o estado do elemento for ocupado 
+    // só vai estar válido se o estado do elemento for ocupado
     int h, h_inicial, k;
     k = 0;
     h = THEA_Hash(TH, chave, k);
@@ -99,7 +103,7 @@ int THEA_Buscar(THEA *TH, int chave)
     while (TH->TH[h].estado != E_LIVRE)
     {
         if ((TH->TH[h].estado == E_OCUPADO) && (TH->TH[h].chave == chave)) // uma vez que o estado estiver ocupado e a chave bater com a qual estamos procurando, então encontramos o elemento
-            return h; // retorna a posição do elemento
+            return h;                                                      // retorna a posição do elemento
         // senão incrementa as tentativas, isto é, testa o próximo deslocamento, e atualiza a hash
         k++;
         h = THEA_Hash(TH, chave, k);
@@ -120,4 +124,16 @@ void THEA_Remover(THEA *TH, int chave)
         TH->TH[p].estado = E_APAGADO;
         TH->n--; // decrementa n indicando que temos um elemento a menos com o estado ocupado ocupando a tabela hash
     }
+}
+
+int THEA_Imprimir(THEA *TH)
+{
+    for (int i = 0; i < TH->m; i++)
+    {
+        const char e = TH->TH[i].estado == E_OCUPADO ? 'O' : (TH->TH[i].estado == E_LIVRE ? 'L' : 'A');
+        printf("%d : %d, %c\n", i, TH->TH[i].chave, e);
+        // printf("%2d: %d ->  %d (%d)\n", i, TH->TH[i].chave, TH->TH[i].valor, TH->TH[i].estado);
+    }
+
+    printf("\n");
 }
