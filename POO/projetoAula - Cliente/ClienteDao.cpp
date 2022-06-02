@@ -18,3 +18,23 @@ Cliente *ClienteDao::retrieve(int clienteId)
 
     return NULL;
 }
+
+bool ClienteDao::update(Cliente &cliente)
+{
+    Cliente *c = this->retrieve(cliente.id);
+    if (c == NULL)
+        return false;
+    c->nome = cliente.nome;
+    c->email = cliente.email;
+    c->idade = cliente.idade;
+    return true;
+}
+
+bool ClienteDao::delet(Cliente &cliente)
+{
+    Cliente *c = this->retrieve(cliente.id);
+    if (c == NULL)
+        return false;
+    
+    return true;
+}

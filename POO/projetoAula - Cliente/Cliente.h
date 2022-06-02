@@ -9,5 +9,6 @@ public: // Fazer getters/setters
     int id;
     std::string nome;
     std::string email;
+    int idade;
     int cpf;
 };

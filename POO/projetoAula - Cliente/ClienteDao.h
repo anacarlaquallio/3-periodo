@@ -11,4 +11,6 @@ class ClienteDao
 public:
     bool create(Cliente &);
     Cliente *retrieve(int);
+    bool update(Cliente &);
+    bool delet(Cliente &);
 };
