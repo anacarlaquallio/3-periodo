@@ -7,7 +7,7 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # There is NO WARRANTY, to the extent permitted by law.
  
 
-# Make data base, printed on Fri Jun 03 09:28:57 2022
+# Make data base, printed on Fri Jun 03 10:54:12 2022
 
 # Variables
 
@@ -32,8 +32,7 @@ HOMEDRIVE = C:
 # automatic
 ^D = $(patsubst %/,%,$(patsubst %\,%,$(dir $^)))
 # makefile
-CUR 
-DIR := c:/Users/anaca/Documents/GitHub/3-periodo/Estrutura de Dados 2/Hashing/Endere�amento direto
+CURDIR := c:/Users/anaca/Documents/GitHub/3-periodo/Estrutura de Dados 2/Hashing/Endere�amento aberto
 # default
 SHELL := sh.exe
 # environment
@@ -44,8 +43,8 @@ VSCODE_NLS_CONFIG = {"locale":"pt-br","availableLanguages":{"*":"pt-br"},"_langu
 ONEDRIVE = C:\Users\anaca\OneDrive
 # environment
 PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
-# makefile (from 'Makefile', line 1)
-MAKEFILE_LIST :=  Makefile
+# makefile (from 'makefile', line 1)
+MAKEFILE_LIST :=  makefile
 # environment
 FPS_BROWSER_USER_PROFILE_STRING = Default
 # environment
@@ -57,7 +56,7 @@ PROGRAMW6432 = C:\Program Files
 # environment
 PROGRAMDATA = C:\ProgramData
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-c6f2336f-64ec-4d41-ad29-196dc75a4a7d-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-df1a0d27-f5ba-45c3-90a2-ca9df4c3e7eb-sock
 # environment
 VSCODE_CWD = C:\Users\anaca\AppData\Local\Programs\Microsoft VS Code
 # environment
@@ -155,8 +154,7 @@ MFLAGS = -Rrqp
 # automatic
 *D = $(patsubst %/,%,$(patsubst %\,%,$(dir $*)))
 # environment
-SYSTEMROOT = 
- C:\Windows
+SYSTEMROOT = C:\Windows
 # automatic
 +D = $(patsubst %/,%,$(patsubst %\,%,$(dir $+)))
 # automatic
@@ -183,7 +181,8 @@ SYSTEMDRIVE = C:
 SESSIONNAME = Console
 # environment
 PROCESSOR_REVISION = 1100
-# default
+# defaul 
+t
 .INCLUDE_DIRS = C:/MinGW/include
 # default
 .RECIPEPREFIX := 
@@ -207,7 +206,7 @@ USERDOMAIN_ROAMINGPROFILE = ANNYQUALLIO
 # Directories
 
 # C:\Windows\System32\WindowsPowerShell\v1.0\ (key C:/Windows/System32/WindowsPowerShell/v1.0/, mtime 1622915765): 29 files, no impossibilities.
-# . (key c:/Users/anaca/Documents/GitHub/3-periodo/Estrutura de Dados 2/Hashing/Endere�amento direto, mtime 1653167760): 12 files, no impossibilities.
+# . (key c:/Users/anaca/Documents/GitHub/3-periodo/Estrutura de Dados 2/Hashing/Endere�amento aberto, mtime 1654262819): 9 files, no impossibilities.
 # C:\Program Files (x86)\Common Files\Oracle\Java\javapath (key C:/Program Files (x86)/Common Files/Oracle/Java/javapath, mtime 1635536604): 5 files, no impossibilities.
 # C:\Users\anaca\AppData\Local\Microsoft\WindowsApps (key C:/Users/anaca/AppData/Local/Microsoft/WindowsApps, mtime 1654173900): 26 files, no impossibilities.
 # C:\Program Files\Git\cmd (key C:/Program Files/Git/cmd, mtime 1642947387): 8 files, no impossibilities.
@@ -226,7 +225,7 @@ USERDOMAIN_ROAMINGPROFILE = ANNYQUALLIO
 # C:\Users\anaca\anaconda3\Scripts (key C:/Users/anaca/anaconda3/Scripts, mtime 1653397588): 354 files, no impossibilities.
 # C:\Users\anaca\anaconda3\Library\mingw-w64\bin (key C:/Users/anaca/anaconda3/Library/mingw-w64/bin, mtime 1636660929): 15 files, no impossibilities.
 
-# 4987 files, no impossibilities in 19 directories.
+# 4984 files, no impossibilities in 19 directories.
 
 # Implicit Rules
 
@@ -259,10 +258,9 @@ all:
 # ? := 
 # variable set hash-table stats:
 # Load=8/32=25%, Rehash=0, Collisions=1/11=9%
-#  recipe to execute (from 'Makefile', line 2):
-	gcc -g -c ilist.c -o ilist.o
-	gcc -g -c hashtable_ed.c -o hashtable_ed.o
-	gcc -g -o main main.c ilist.o hashtable_ed.o
+#  recipe to execute (from 'makefile', line 2):
+	gcc -g *.c -o main.exe
+	./main.exe
 
 # Not a target:
 .SUFFIXES:
@@ -271,9 +269,9 @@ all:
 #  File has not been updated.
 
 # Not a target:
-Makefile:
+makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-12 11:25:13
+#  Last modified 2022-06-01 14:23:25
 #  File has been updated.
 #  Successfully updated.
 
@@ -291,14 +289,14 @@ Makefile:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 10 (9) / strings = 4812 / storage = 73967 B / avg = 15 B
-# current buf: size = 8174 B / used = 471 B / count = 39 / avg = 12 B
-# other used: total = 65793 B / count = 4773 / avg = 13 B
-# other free: total = 70 B / max = 15 B / min = 2 B / avg = 7 B
+# strcache buffers: 10 (9) / strings = 4809 / storage = 73943 B / avg = 15 B
+# current buf: size = 8174 B / used = 447 B / count = 37 / avg = 12 B
+# other used: total = 65769 B / count = 4772 / avg = 13 B
+# other free: total = 70 B / max = 13 B / min = 1 B / avg = 7 B
 
-# strcache performance: lookups = 5015 / hit rate = 4%
+# strcache performance: lookups = 5012 / hit rate = 4%
 # hash-table stats:
-# Load=4812/8192=59%, Rehash=0, Collisions=2676/5015=53%
-# Finished Make data base on Fri Jun 03 09:28:57 2022
+# Load=4809/8192=59%, Rehash=0, Collisions=2671/5012=53%
+# Finished Make data base on Fri Jun 03 10:54:12 2022
 
  
