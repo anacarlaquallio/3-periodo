@@ -7,7 +7,7 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # There is NO WARRANTY, to the extent permitted by law.
  
 
-# Make data base, printed on Fri Jun 03 10:54:12 2022
+# Make data base, printed on Sat Jun 04 20:01:54 2022
 
 # Variables
 
@@ -56,7 +56,7 @@ PROGRAMW6432 = C:\Program Files
 # environment
 PROGRAMDATA = C:\ProgramData
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-df1a0d27-f5ba-45c3-90a2-ca9df4c3e7eb-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-a266c3dc-c78c-4f85-975d-593121fe0574-sock
 # environment
 VSCODE_CWD = C:\Users\anaca\AppData\Local\Programs\Microsoft VS Code
 # environment
@@ -80,7 +80,7 @@ ELECTRON_RUN_AS_NODE = 1
 # automatic
 %F = $(notdir $%)
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_7920_PBFDCTWTNHFURDAP
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_12964_EKABLARYKWMAWPWV
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
@@ -96,11 +96,12 @@ USERNAME = anaca
 # environment
 PUBLIC = C:\Users\Public
 # environment
-VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api 
+/node/extensionHostProcess
 # environment
 VSCODE_CODE_CACHE_PATH = C:\Users\anaca\AppData\Roaming\Code\CachedData\c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # environment
 COMMONPROGRAMFILES = C:\Program Files (x86)\Common Files
 # environment
@@ -181,8 +182,7 @@ SYSTEMDRIVE = C:
 SESSIONNAME = Console
 # environment
 PROCESSOR_REVISION = 1100
-# defaul 
-t
+# default
 .INCLUDE_DIRS = C:/MinGW/include
 # default
 .RECIPEPREFIX := 
@@ -193,7 +193,7 @@ PROCESSOR_LEVEL = 23
 # environment
 FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
 # environment
-VSCODE_PID = 7920
+VSCODE_PID = 12964
 # environment
 USERDOMAIN_ROAMINGPROFILE = ANNYQUALLIO
 # variable set hash-table stats:
@@ -213,7 +213,8 @@ USERDOMAIN_ROAMINGPROFILE = ANNYQUALLIO
 # C:\Windows\System32\OpenSSH\: could not be stat'd.
 # C:\MinGW\bin (key C:/MinGW/bin, mtime 1636990268): 60 files, no impossibilities.
 # C:\Users\anaca\AppData\Local\Programs\Microsoft VS Code\bin (key C:/Users/anaca/AppData/Local/Programs/Microsoft VS Code/bin, mtime 1652981868): 4 files, no impossibilities.
-# C:\ProgramData\anaca\GitHubDesktop\bin (key C:/ProgramData/anaca/GitHubDesktop/bin, mtime 1643576671): 4 files, no impossibilities.
+# C:\ProgramData\anaca\GitHubDesktop\bin (key C 
+:/ProgramData/anaca/GitHubDesktop/bin, mtime 1643576671): 4 files, no impossibilities.
 # C:\Windows (key C:/Windows, mtime 1653403600): 111 files, no impossibilities.
 # C:\Users\anaca\anaconda3 (key C:/Users/anaca/anaconda3, mtime 1653397588): 90 files, no impossibilities.
 # C:\Program Files\MATLAB\R2022a\bin (key C:/Program Files/MATLAB/R2022a/bin, mtime 1652533357): 14 files, no impossibilities.
@@ -297,6 +298,6 @@ makefile:
 # strcache performance: lookups = 5012 / hit rate = 4%
 # hash-table stats:
 # Load=4809/8192=59%, Rehash=0, Collisions=2671/5012=53%
-# Finished Make data base on Fri Jun 03 10:54:12 2022
+# Finished Make data base on Sat Jun 04 20:01:54 2022
 
  
