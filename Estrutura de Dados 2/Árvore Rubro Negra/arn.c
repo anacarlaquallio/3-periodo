@@ -7,18 +7,18 @@ ARN *ARN_Criar()
 {
     return NULL;
 }
-static ARN *ARN_NovoNo(int chave, int valor) // static faz com que a função funcione apenas internamente
+
+static ARN *ARN_NovoNo(int chave, int valor)
 {
     ARN *novo = malloc(sizeof(ARN));
     novo->chave = chave;
     novo->valor = valor;
     novo->cor = C_VERMELHO;
-    novo->esq = NULL;
     novo->dir = NULL;
+    novo->esq = NULL;
+
     return novo;
 }
-
-//**A endereço do ponteiro que aponta para o nó
 
 static inline bool eh_vermelho(ARN *A)
 {
@@ -28,7 +28,7 @@ static inline bool eh_vermelho(ARN *A)
     return A->cor == C_VERMELHO;
 }
 
-static inline void inverter_cores(ARN *A) // o compilador vai colocar essa função direto
+static inline void inverter_cores(ARN *A)
 {
     A->cor = C_VERMELHO;
     A->esq->cor = C_PRETO;
@@ -38,8 +38,8 @@ static inline void inverter_cores(ARN *A) // o compilador vai colocar essa funç
 static void rot_esq(ARN **A)
 {
     ARN *h, *x;
-    h = *A;     // pai
-    x = h->dir; // x recebe filho direito
+    h = *A;
+    x = h->dir;
     h->dir = x->esq;
     x->esq = h;
     x->cor = h->cor;
@@ -50,8 +50,8 @@ static void rot_esq(ARN **A)
 static void rot_dir(ARN **A)
 {
     ARN *h, *x;
-    h = *A;     // pai
-    x = h->esq; // x recebe filho direito
+    h = *A;
+    x = h->esq;
     h->esq = x->dir;
     x->dir = h;
     x->cor = h->cor;
@@ -59,13 +59,16 @@ static void rot_dir(ARN **A)
     *A = x;
 }
 
-void ARN_Inserir_R(ARN **A, int chave, int valor) // parte recursiva da recursão
+void ARN_Inserir_R(ARN **A, int chave,
+                   int valor)
 {
-    if ((*A) = NULL) // se valor que estiver sendo apontado para o A for null, pendura um novo nó
+
+    if ((*A) == NULL)
     {
         *A = ARN_NovoNo(chave, valor);
-        return; // cai fora
+        return;
     }
+
     if (chave < (*A)->chave)
     {
         ARN_Inserir_R(&(*A)->esq, chave, valor);
@@ -75,35 +78,51 @@ void ARN_Inserir_R(ARN **A, int chave, int valor) // parte recursiva da recursã
         ARN_Inserir_R(&(*A)->dir, chave, valor);
     }
 
-    // filho esquerdo preto/null e filho direito vermelho
-    // inserção nó simples à direta
-    // inserção duplo valor mediano
-    if (eh_vermelho((*A)->dir) && !eh_vermelho((*A)->esq))
+    // inserção nó simples à dir e
+    // inserção duplo valor mediano (etapa 1)
+    if (eh_vermelho((*A)->dir) &&
+        !eh_vermelho((*A)->esq))
     {
-        ror_esq(A);
+        rot_esq(A);
     }
-
-    // inserção nó simples duplo menor valor
-    // inserção nó simples valor duplo mediano
-    if (eh_vermelho((*A)->esq) && eh_vermelho((*A)->esq->esq))
+    // inserção duplo menor valor (etapa 1)
+    // inserção duplo valor mediano (etapa 2)
+    if (eh_vermelho((*A)->esq) &&
+        eh_vermelho((*A)->esq->esq))
     {
         rot_dir(A);
     }
-
-    // inserção duplo valor mediano
-    // inserção nó duplo com maior valor
-    if (eh_vermelho((*A)->esq) && eh_vermelho((*A)->dir))
+    // inserção duplo maior valor (etapa 2)
+    // inserção duplo valor mediano (etapa 3)
+    if (eh_vermelho((*A)->esq) &&
+        eh_vermelho((*A)->dir))
     {
         inverter_cores(*A);
     }
 }
 
-void ARN_Inserir(ARN **A, int chave, int valor)
-{ // garante que depois de inserir a aresta vai ser preta
+void ARN_Inserir(ARN **A, int chave,
+                 int valor)
+{
+
     ARN_Inserir_R(A, chave, valor);
     (*A)->cor = C_PRETO;
 }
-
-void ARN_Imprimir(ARN *A)
+void ARN_Imprimir(ARN *A, int nivel, char lado)
 {
+    int i;
+    for (i = 0; i < nivel; i++)
+    {
+        printf("--> ");
+    }
+    if (A == NULL)
+    {
+        printf("(%c) NONE\n", lado);
+    }
+    else
+    {
+        printf("(%c) %c [%s]\n", lado, (char)A->chave, A->cor == C_VERMELHO ? "V" : "P");
+        ARN_Imprimir(A->esq, nivel + 1, 'e');
+        ARN_Imprimir(A->dir, nivel + 1, 'd');
+    }
 }
