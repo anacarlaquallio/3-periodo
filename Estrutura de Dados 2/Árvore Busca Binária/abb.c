@@ -14,7 +14,7 @@ void ABB_Inserir(ABB **A, int chave)
     if ((*A) == NULL) // se o conteúdo do ponteiro A for NULL
     {
         *A = ABB_Criar(chave, NULL, NULL); // cria um folha
-        return; // cai fora da inserção
+        return;                            // cai fora da inserção
     }
     // A só é o endereço do ponteiro. *A é o ponteiro em si, que contém o valor
 
@@ -37,4 +37,13 @@ ABB *ABB_Buscar(ABB *A, int chave)
     if (chave < A->chave)
         return ABB_Buscar(A->esq, chave);
     return ABB_Buscar(A->dir, chave);
+}
+
+void AB_Destruir(ABB **A)
+{
+    if ((*A) == NULL)
+        return;
+    AB_Destruir(&(*A)->esq);
+    AB_Destruir(&(*A)->dir);
+    free(*A);
 }
