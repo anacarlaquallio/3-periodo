@@ -3,12 +3,17 @@ SELECT DISTINCT D.nome, F.nome FROM DEPARTAMENTO D, FUNCIONARIO F, TRABALHA T WH
 AND F.id = T.id_funcionario;
 
 -- Verifique se há departamentos sem funcionários.
-SELECT DISTINCT D.nome, F.nome FROM DEPARTAMENTO D, TRABALHA T WHERE D.id = T.id_depto
+SELECT DISTINCT D.nome, F.nome FROM DEPARTAMENTO D, TRABALHA T, FUNCIONARIO F WHERE D.id = T.id_depto
 AND T.id_funcionario IS NULL;
 
 -- Para cada departamento, calcule a idade média se seus funcionários.
 SELECT D.nome, AVG(F.salario) FROM DEPARTAMENTO D, FUNCIONARIO F, TRABALHA T WHERE 
 D.id = T.id_depto AND T.id_funcionario = F.id GROUP BY D.nome;
+
+-- Lista os nomes dos gerentes que são mais velhos do que a idade média de seus funcionários.
+select 	F1.nome FROM FUNCIONARIO F1, DEPARTAMENTO D WHERE D.id_gerente = F1.id 
+AND F1.idade > ALL(SELECT AVG(F.idade) FROM FUNCIONARIO F, TRABALHA T, 
+DEPARTAMENTO D WHERE D.id = T.id_depto AND F.id = T.id_funcionario);
 
 DROP TABLE IF EXISTS TRABALHA;
 DROP TABLE IF EXISTS DEPARTAMENTO;
