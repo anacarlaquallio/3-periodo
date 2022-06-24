@@ -1,0 +1,29 @@
+	ORG 100		/ Example 4.1 
+	Load	 Addr	/Carregamento do endereço do primeiro número a ser adicionado		
+	Store	 Next	/Armazenar este endereço é nosso próximo ponteiro		
+	Load 	 Num	/Carregar o número de itens a serem adicionados		
+	Subt	 One	/Decrementa 		
+	Store	 Ctr	/Armazene este valor em Ctr para controlar o loop		
+Loop,	Load 	 Sum	/Carregar Sum em AC		
+	AddI	 Next	/Adicione o valor apontado por local Next		
+	Store	 Sum	/Armazenar em Sum		
+	Load	 Next	/Carregar Next		
+	Add	 One	/Incrementar em um para apontar para o próximo endereço		
+	Store	 Next	/Armazenar em nosso ponteiro Next		
+	Load	 Ctr	/Carregar a variável de controle de loop		
+	Subt	 One	/Subtraia um da variável de controle de loop		
+	Store	 Ctr	/Armazene este novo valor na variável de controle de loop		
+	Skipcond 000	/Se variável de controle < 0, pule a próxima instrução		
+	Jump	 Loop	/Caso contrário, vá para Loop		
+	Halt		/Encerrar programa		
+Addr,	Hex	 117	/Os números a serem somados começam no local 118		
+Next,	Hex	 0	/Um ponteiro para o próximo número a ser adicionado		
+Num,	Dec	 5	/O número de valores a serem adicionados 		
+Sum,	Dec	 0	/A soma		
+Ctr,	Hex	 0	/A variável de controle de loop		
+One,	Dec	 1	/Usado para aumentar e diminuir em 1		
+	Dec	 10	/Os valores a serem somados		
+	Dec	 15	/Os valores a serem somados
+	Dec	 20	/Os valores a serem somados
+	Dec	 25	/Os valores a serem somados
+	Dec	 30	/Os valores a serem somados		
