@@ -13,7 +13,7 @@ typedef struct ARN
     struct ARN *esq;
     struct ARN *dir;
     ARN_COR cor;
-} ARN;
+} ARN; // estrutura da árvore rubo negra
 
 ARN *ARN_Criar();
 void ARN_Inserir(ARN **A, int chave, int valor);

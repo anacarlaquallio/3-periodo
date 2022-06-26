@@ -19,6 +19,4 @@ int main(int argc, char** argv){
    ARN_Imprimir(A, 0, 'r');
    ARN_Inserir(&A, (int)'R', 0);
    ARN_Imprimir(A, 0, 'r');
-
-
 }

@@ -1,0 +1,7 @@
+make.exe: Entering directory 'c:/Users/anaca/Documents/GitHub/3-periodo/Estrutura de Dados 2/�rvore Rubro Negra'
+gcc -g -c arn.c -o arn.o
+gcc -g -o main main.c arn.o
+./main.exe 
+ 
+make.exe: Leaving directory 'c:/Users/anaca/Documents/GitHub/3-periodo/Estrutura de Dados 2/�rvore Rubro Negra'
+ 
