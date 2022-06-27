@@ -1,5 +1,16 @@
 #include "abb.h"
 
+ABB **ABB_Min(ABB **A)
+{
+    if ((*A) == NULL)
+        return NULL;
+    while ((*A)->esq != NULL)
+    {
+        A = &(*A)->esq;
+        return A;
+    }
+}
+
 int ABB_Profundidade(ABB *A, int chave)
 {
     if (A = NULL)
@@ -152,4 +163,35 @@ void ABB_ImprimirEmOrdem(ABB *A)
     ABB_ImprimirEmOrdem(A->esq);
     printf("%d, ", A->chave);
     ABB_ImprimirEmOrdem(A->dir);
+}
+
+void ABB_Remover(ABB **A, int chave)
+{
+    if ((*A) == NULL)
+        return;
+    if (chave < (*A)->chave)
+        ABB_Remover(&(*A)->esq, chave);
+    else if (chave > (*A)->chave)
+        ABB_Remover(&(*A)->dir, chave);
+    else
+    {
+        ABB *t;
+        if ((*A)->esq == NULL)
+        {
+            t = *A;
+            *A = (*A)->dir;
+            free(t);
+            return;
+        }
+        if ((*A)->dir == NULL)
+        {
+            t = *A;
+            *A = (*A)->esq;
+            free(t);
+            return;
+        }
+        ABB **suc = ABB_Min((*A)->dir);
+        (*A)->chave = (*suc)->chave;
+        ABB_Remover(suc, (*suc)->chave);
+    }
 }
