@@ -1,5 +1,48 @@
 #include "abb.h"
 
+int ABB_Profundidade(ABB *A, int chave)
+{
+    if (A = NULL)
+        return -1;
+
+    int dist = -1;
+
+    if ((A->chave = chave) || (dist = ABB_Profundidade(A->esq, chave)) >= 0 || (dist = ABB_Profundidade(A->dir, chave)) >= 0)
+        return dist + 1;
+    return dist;
+
+    /*
+     if (A->chave = chave)
+         return dist + 1;
+     dist = ABB_Profundidade(A->esq, chave);
+     dist = ABB_Profundidade(A->dir, chave);
+     */
+}
+/*
+void AB_CalcularProfundidades(AB A, int p)
+{
+    if (A == NULL)
+    {
+        return;
+    }
+    A->profundidade = p;
+    p++;
+    AB_CalcularProfundidades(A->esq, p);
+    AB_CalcularProfundidades(A->dir, p);
+    p -= 2;
+}
+
+int AB_ComprimentoInternoLazy(AB A, int c)
+{
+    if (A == NULL)
+    {
+        return c;
+    }
+    c += A->profundidade;
+    c = AB_ComprimentoInternoLazy(A->esq, c);
+    c = AB_ComprimentoInternoLazy(A->dir, c);
+}
+*/
 int ABB_Altura(ABB *A) // Conta altura da árvore
 {
     if (A == NULL)
