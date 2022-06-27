@@ -7,7 +7,7 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # There is NO WARRANTY, to the extent permitted by law.
  
 
-# Make data base, printed on Mon Jun 27 18:05:37 2022
+# Make data base, printed on Mon Jun 27 19:29:59 2022
 
 # Variables
 
@@ -56,7 +56,7 @@ PROGRAMW6432 = C:\Program Files
 # environment
 PROGRAMDATA = C:\ProgramData
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-35d374d2-d50c-42bf-8e19-29a286fa4179-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-6153c779-02a6-485b-aa22-18af493640e8-sock
 # environment
 VSCODE_CWD = C:\Users\anaca\AppData\Local\Programs\Microsoft VS Code
 # environment
@@ -297,6 +297,6 @@ makefile:
 # strcache performance: lookups = 5012 / hit rate = 4%
 # hash-table stats:
 # Load=4809/8192=59%, Rehash=0, Collisions=2671/5012=53%
-# Finished Make data base on Mon Jun 27 18:05:37 2022
+# Finished Make data base on Mon Jun 27 19:29:59 2022
 
  
