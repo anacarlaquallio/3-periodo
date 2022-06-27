@@ -3,6 +3,24 @@
 #include <stdio.h>
 #include <stdbool.h>
 
+int ABB_Altura(ABB *A) // Conta altura da árvore
+{
+    int countd = 0;
+    int counte = 0;
+    if (A == NULL)
+        return 0;
+    ABB_Altura(A->dir);
+    if (A->cor = C_PRETO)
+        countd++;
+    ABB_Altura(A->esq);
+    if (A->cor = C_PRETO)
+        counte++;
+    if (countd > counte)
+        return countd + 1;
+    else
+        return counte + 1;
+}
+
 ARN *ARN_Criar()
 {
     return NULL;
@@ -38,7 +56,7 @@ static inline void inverter_cores(ARN *A)
 static void rot_esq(ARN **A)
 {
     ARN *h, *x;
-    h = *A; // h é o nó que está sendo apontado por A
+    h = *A;     // h é o nó que está sendo apontado por A
     x = h->dir; // x é filho direto de h
     h->dir = x->esq;
     x->esq = h;
