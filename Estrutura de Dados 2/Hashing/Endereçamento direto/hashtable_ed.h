@@ -1,9 +1,13 @@
 #pragma once
 
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
 #include "ilist.h"
 
 typedef struct THED {
-    ILIST** t; // a tabela é um vetor e cada posição possui uma lista
+    ILIST** t; // a tabela é um vetor de m elementos e cada posição possui uma lista
     // cada posição vai ter um ponteiro para ILIST, por isso é **
     int m, n; // n = qtd de elementos que a gente inseriu, m é a qtd de listas, endereços
     // n/m vai ser o comprimento das listas

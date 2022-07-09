@@ -3,24 +3,6 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-int ABB_Altura(ABB *A) // Conta altura da árvore
-{
-    int countd = 0;
-    int counte = 0;
-    if (A == NULL)
-        return 0;
-    ABB_Altura(A->dir);
-    if (A->cor = C_PRETO)
-        countd++;
-    ABB_Altura(A->esq);
-    if (A->cor = C_PRETO)
-        counte++;
-    if (countd > counte)
-        return countd + 1;
-    else
-        return counte + 1;
-}
-
 ARN *ARN_Criar()
 {
     return NULL;

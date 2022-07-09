@@ -13,21 +13,14 @@ ABB **ABB_Min(ABB **A)
 
 int ABB_Profundidade(ABB *A, int chave)
 {
-    if (A = NULL)
+    if (A == NULL)
         return -1;
 
     int dist = -1;
 
-    if ((A->chave = chave) || (dist = ABB_Profundidade(A->esq, chave)) >= 0 || (dist = ABB_Profundidade(A->dir, chave)) >= 0)
+    if ((A->chave == chave) || (dist = ABB_Profundidade(A->esq, chave)) >= 0 || (dist = ABB_Profundidade(A->dir, chave)) >= 0)
         return dist + 1;
     return dist;
-
-    /*
-     if (A->chave = chave)
-         return dist + 1;
-     dist = ABB_Profundidade(A->esq, chave);
-     dist = ABB_Profundidade(A->dir, chave);
-     */
 }
 /*
 void AB_CalcularProfundidades(AB A, int p)

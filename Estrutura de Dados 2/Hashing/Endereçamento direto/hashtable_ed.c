@@ -1,9 +1,4 @@
-#include <stdlib.h>
-#include <stdio.h>
-#include <string.h>
-#include "ilist.h"
 #include "hashtable_ed.h"
-#include <math.h>
 
 unsigned int string_hash(char *string, int M)
 {
@@ -71,7 +66,7 @@ INOH *THED_Buscar(THED *HT, int chave)
 
 void THED_Imprimir(THED *HT)
 {
-    printf("===TABELA HASH M = %ld ===\n", HT->m);
+    printf("===TABELA HASH M = %d ===\n", HT->m);
     for (int i = 0; i < HT->m; i++)
     {
         printf("%d: \n", i);

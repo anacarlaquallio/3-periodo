@@ -7,7 +7,7 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # There is NO WARRANTY, to the extent permitted by law.
  
 
-# Make data base, printed on Mon Jun 27 20:45:08 2022
+# Make data base, printed on Mon Jul 04 18:47:27 2022
 
 # Variables
 
@@ -32,8 +32,7 @@ HOMEDRIVE = C:
 # automatic
 ^D = $(patsubst %/,%,$(patsubst %\,%,$(dir $^)))
 # makefile
-CUR 
-DIR := c:/Users/anaca/Documents/GitHub/3-periodo/Estrutura de Dados 2/�rvore Rubro Negra
+CURDIR := c:/Users/anaca/Documents/GitHub/3-periodo/Estrutura de Dados 2/�rvore Rubro Negra
 # default
 SHELL := sh.exe
 # environment
@@ -57,7 +56,7 @@ PROGRAMW6432 = C:\Program Files
 # environment
 PROGRAMDATA = C:\ProgramData
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-03b5303a-9d10-4daf-b006-61760ddb1d26-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-529c15c7-f1a9-4c99-b243-8c227927aee9-sock
 # environment
 VSCODE_CWD = C:\Users\anaca\AppData\Local\Programs\Microsoft VS Code
 # environment
@@ -81,7 +80,7 @@ ELECTRON_RUN_AS_NODE = 1
 # automatic
 %F = $(notdir $%)
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_14928_LBUGYMAGVSCXAOSD
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_15236_KLQIHTEKBUAGZTLZ
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
@@ -101,7 +100,7 @@ VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
 VSCODE_CODE_CACHE_PATH = C:\Users\anaca\AppData\Roaming\Code\CachedData\30d9c6cd9483b2cc586687151bcbcd635f373630
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
 # environment
 COMMONPROGRAMFILES = C:\Program Files (x86)\Common Files
 # environment
@@ -135,8 +134,7 @@ MAKE_COMMAND := make.exe
 # environment
 PROCESSOR_ARCHITEW6432 = AMD64
 # default
-.VARIABLES  
-:= 
+.VARIABLES := 
 # automatic
 *F = $(notdir $*)
 # environment
@@ -194,7 +192,7 @@ PROCESSOR_LEVEL = 23
 # environment
 FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
 # environment
-VSCODE_PID = 14928
+VSCODE_PID = 15236
 # environment
 USERDOMAIN_ROAMINGPROFILE = ANNYQUALLIO
 # variable set hash-table stats:
@@ -209,7 +207,8 @@ USERDOMAIN_ROAMINGPROFILE = ANNYQUALLIO
 # C:\Windows\System32\WindowsPowerShell\v1.0\ (key C:/Windows/System32/WindowsPowerShell/v1.0/, mtime 1622915765): 29 files, no impossibilities.
 # . (key c:/Users/anaca/Documents/GitHub/3-periodo/Estrutura de Dados 2/�rvore Rubro Negra, mtime 1656264051): 9 files, no impossibilities.
 # C:\Program Files (x86)\Common Files\Oracle\Java\javapath (key C:/Program Files (x86)/Common Files/Oracle/Java/javapath, mtime 1635536604): 5 files, no impossibilities.
-# C:\Users\anaca\AppData\Local\Microsoft\WindowsApps (key C:/Users/anaca/AppData/Local/Microsoft/WindowsApps, mtime 1656074361): 26 files, no impossibilities.
+# C:\Users\anaca\AppData\Local\Microsoft\WindowsApps (key C:/Users/anaca/AppData/Local/Microsoft/WindowsApps, mtime 1656784019):  
+26 files, no impossibilities.
 # C:\Program Files\Git\cmd (key C:/Program Files/Git/cmd, mtime 1642947387): 8 files, no impossibilities.
 # C:\Windows\System32\OpenSSH\: could not be stat'd.
 # C:\MinGW\bin (key C:/MinGW/bin, mtime 1636990268): 60 files, no impossibilities.
@@ -223,8 +222,7 @@ USERDOMAIN_ROAMINGPROFILE = ANNYQUALLIO
 # C:\Users\anaca\AppData\Local\Programs\MiKTeX\miktex\bin\x64\ (key C:/Users/anaca/AppData/Local/Programs/MiKTeX/miktex/bin/x64/, mtime 1643631935): 711 files, no impossibilities.
 # C:\Users\anaca\anaconda3\Library\bin (key C:/Users/anaca/anaconda3/Library/bin, mtime 1653397588): 506 files, no impossibilities.
 # C:\Windows\system32 (key C:/Windows/system32, mtime 1655581843): 2883 files, no impossibilities.
-# C:\Users\anaca\anaconda3\Scripts (key C:/Users/anaca/anac 
-onda3/Scripts, mtime 1653397588): 354 files, no impossibilities.
+# C:\Users\anaca\anaconda3\Scripts (key C:/Users/anaca/anaconda3/Scripts, mtime 1653397588): 354 files, no impossibilities.
 # C:\Users\anaca\anaconda3\Library\mingw-w64\bin (key C:/Users/anaca/anaconda3/Library/mingw-w64/bin, mtime 1636660929): 15 files, no impossibilities.
 
 # 4984 files, no impossibilities in 19 directories.
@@ -292,8 +290,7 @@ makefile:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 10 (9) / strings = 4809 / storage = 73916 B / av 
-g = 15 B
+# strcache buffers: 10 (9) / strings = 4809 / storage = 73916 B / avg = 15 B
 # current buf: size = 8174 B / used = 433 B / count = 36 / avg = 12 B
 # other used: total = 65742 B / count = 4773 / avg = 13 B
 # other free: total = 83 B / max = 13 B / min = 2 B / avg = 9 B
@@ -301,6 +298,6 @@ g = 15 B
 # strcache performance: lookups = 5012 / hit rate = 4%
 # hash-table stats:
 # Load=4809/8192=59%, Rehash=0, Collisions=2671/5012=53%
-# Finished Make data base on Mon Jun 27 20:45:08 2022
+# Finished Make data base on Mon Jul 04 18:47:27 2022
 
  
